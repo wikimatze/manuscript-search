@@ -70,5 +70,6 @@ found 0 vulnerabilities
 ```
 
 - App runs on <http://localhost:5173/>
+- Install dependencies: `cd manuscript-search/frontend && npm install`
 - start dev server again: `cd manuscript-search/frontend && npm run dev`
 
