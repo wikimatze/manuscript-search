@@ -1,0 +1,29 @@
+{
+    "add-field": [
+    {
+      "name": "title",
+      "type": "text_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "author",
+      "type": "text_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "year",
+      "type": "pint",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "manifest",
+      "type": "string",
+      "indexed": false,
+      "stored": true
+    }
+  ]
+}
+
