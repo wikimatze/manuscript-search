@@ -4,8 +4,15 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+
 function App() {
   const [query, setQuery] = useState("")
+
+
+  function handleSearch() {
+    console.log("Search", query)
+  }
+
    return (
      <main>
         <h1>Manuscript Search</h1>
@@ -16,7 +23,7 @@ function App() {
           value={query}
           onChange={() => setQuery(event.target.value)}
           />
-        <button>
+        <button onClick={handleSearch}>
           Search
         </button>
 
