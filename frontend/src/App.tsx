@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
+  const [query, setQuery] = useState("")
    return (
      <main>
         <h1>Manuscript Search</h1>
@@ -12,10 +13,16 @@ function App() {
         <input
           type="text"
           placeholder="Search"
-        />
+          value={query}
+          onChange={() => setQuery(event.target.value)}
+          />
         <button>
           Search
         </button>
+
+        <p>
+          You are searching for: <strong>{query}</strong>
+        </p>
     </main>
     );
 }
