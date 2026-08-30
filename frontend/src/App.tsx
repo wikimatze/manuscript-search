@@ -6,10 +6,17 @@ import './App.css'
 
 function App() {
    return (
-        <div>
-            <h1>Manuscript Search</h1>
-            <p>Suche in digitalisierten Manuskripten</p>
-        </div>
+     <main>
+        <h1>Manuscript Search</h1>
+
+        <input
+          type="text"
+          placeholder="Search"
+        />
+        <button>
+          Search
+        </button>
+    </main>
     );
 }
 
