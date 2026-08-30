@@ -1,0 +1,58 @@
+[
+    {
+    "id": "1",
+    "title": "Faust",
+    "author": "Goethe",
+    "year": 1808,
+    "manifest": "/manifests/faust.json"
+  },
+  {
+    "id": "2",
+    "title": "Die Räuber",
+    "author": "Schiller",
+    "year": 1781,
+    "manifest": "/manifests/raeuber.json"
+  },
+  {
+    "id": "3",
+    "title": "Wilhelm Tell",
+    "author": "Schiller",
+    "year": 1804,
+    "manifest": "/manifests/tell.json"
+  },
+  {
+    "id": "4",
+    "title": "Die Leiden des jungen Werther",
+    "author": "Goethe",
+    "year": 1774,
+    "manifest": "/manifests/werther.json"
+  },
+  {
+    "id": "5",
+    "title": "Der zerbrochne Krug",
+    "author": "Kleist",
+    "year": 1811,
+    "manifest": "/manifests/krug.json"
+  },
+  {
+    "id": "6",
+    "title": "Michael Kohlhaas",
+    "author": "Kleist",
+    "year": 1811,
+    "manifest": "/manifests/kohlhaas.json"
+  },
+  {
+    "id": "7",
+    "title": "Nathan der Weise",
+    "author": "Lessing",
+    "year": 1779,
+    "manifest": "/manifests/nathan.json"
+  },
+  {
+    "id": "8",
+    "title": "Emilia Galotti",
+    "author": "Lessing",
+    "year": 1772,
+    "manifest": "/manifests/emilia.json"
+  }
+]

@@ -72,4 +72,24 @@ found 0 vulnerabilities
 - App runs on <http://localhost:5173/>
 - Install dependencies: `cd manuscript-search/frontend && npm install`
 - start dev server again: `cd manuscript-search/frontend && npm run dev`
+- make sure docker and docker compose is installed: `docker --version && docker compose version` (both commands should
+  print a version number)
+- starting solr via docker: `docker compose up -d` and now solr is running under <http://localhost:8983>
+
+
+# Solr Setup
+
+- apply schema:
+
+curl -X POST \
+  -H 'Content-type:application/json' \
+  --data-binary @schema.json \
+  "http://localhost:8983/solr/manuscripts/schema"
+
+- apply test-data:
+
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  --data-binary @data/manuscripts.json \
+  'http://localhost:8983/solr/manuscripts/update?commit=true'
 
