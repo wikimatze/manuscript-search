@@ -17,25 +17,14 @@ function App() {
 
   const [query, setQuery] = useState("")
 
-  const [resuls, setResults] = useState<Manuscript[]>([
-    {
-      id: "1",
-      title: "Faust",
-      author: "Goethe",
-      year: 1880,
-      manifest: "/manifest/faust"
-    },
-    {
-      id: "2",
-      title: "Die Räuber",
-      author: "Schiller",
-      year: 1781,
-      manifest: "/manifest/die-raueber"
-    },
-  ])
+  const [resuls, setResults] = useState<Manuscript[]>([])
 
 
-  function handleSearch() {
+  async function handleSearch() {
+    const response = await fetch("api/manuscripts");
+
+    const data: Manuscript[] = await response.json();
+
     setResults([])
     console.log("Search", query)
   }
