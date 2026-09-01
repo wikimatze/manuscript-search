@@ -26,6 +26,9 @@ function App() {
         <button onClick={handleSearch}>
           Search
         </button>
+        <button onClick={() => setQuery("")}>
+          Clear
+        </button>
 
         <p>
           You are searching for: <strong>{query}</strong>
