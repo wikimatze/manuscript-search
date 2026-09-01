@@ -15,18 +15,21 @@ function App() {
     manifest: number
   }
 
+  const [loading, setLoading] = useState(false)
+
   const [query, setQuery] = useState("")
 
   const [resuls, setResults] = useState<Manuscript[]>([])
 
 
   async function handleSearch() {
+    setLoading(true);
     const response = await fetch("api/manuscripts");
 
     const data: Manuscript[] = await response.json();
 
-    setResults([])
-    console.log("Search", query)
+    setResults(data);
+    setLoading(false);
   }
 
    return (
@@ -52,6 +55,8 @@ function App() {
 
         <h2>Results:</h2>
 
+
+        {loading && <p>Loading...</p>}
 
         <ul>
           {resuls.map((manuscript) => (
