@@ -12,12 +12,12 @@ function App() {
     title: string;
     author: string;
     year: number;
-    manifest: string;
+    manifest: number
   }
 
   const [query, setQuery] = useState("")
 
-  const [resuls] = useState<Manuscript[]>([
+  const [resuls, setResults] = useState<Manuscript[]>([
     {
       id: "1",
       title: "Faust",
@@ -36,6 +36,7 @@ function App() {
 
 
   function handleSearch() {
+    setResults([])
     console.log("Search", query)
   }
 
